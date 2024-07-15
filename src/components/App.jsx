@@ -1,16 +1,15 @@
-export const App = () => {
+import Paper from './Paper';
+import Sidebar from './Sidebar';
+import schoolImage from '..mmm'
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <main>
+      {' '}
+      <Sidebar />
+    </main>
+    <Paper>
+        <img src ={schoolImage} alt='schoolImage'></img>
+    </Paper>
   );
-};
+}
+export default App;
